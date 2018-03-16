@@ -17,9 +17,15 @@ class App extends React.Component {
     // render always return UI
     render() {
         return (
+            // this is JSX not HTML! Babel will transform into light-weight JS
             <div>
                 Hello World!
             </div>
         )
     }
 }
+
+// Hook react component to DOM
+ReactDOM.render(
+    <App/>, document.getElementById('app')
+);
