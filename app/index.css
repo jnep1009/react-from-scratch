@@ -2,5 +2,57 @@ body {
     /*using webkit-gradient for color gradient background*/
     background: -webkit-gradient(linear, 0% 100%, 100% 24%, from(#004d7a), to(#a8eb12));
     color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Roboto, sans-serif;
 }
 
+.ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.languages{
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.language li{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popular-item{
+    margin: 20px;
+    text-align: center;
+}
+
+.space-list-items {
+    margin-bottom: 7px;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 75%
+}
+
+.popular-rank{
+    font-size: 20px;
+    margin: 10px;
+}
