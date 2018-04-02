@@ -4,6 +4,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import api from '../utils/api';
+import Loading from './Loading';
 
 // to make a stateless function we can just do
 // Stateless just received props, but it didn't have it own state
@@ -138,7 +139,7 @@ class Popular extends React.Component {
                 />
                 { // do this because we set the required array type of repos proptype so it wont get error when we
                     // havne't fetched from the server
-                    !this.state.repos ? <p>Loading!</p> :
+                    !this.state.repos ? <Loading text='Downloading' speed={300}/> :
                     <RepoGrid  repos={this.state.repos}/>
                 }
             </div>
